@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Teste Mongo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="container-fluid">
+                    <form id="CADASTRO">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">Nome:</label>
+                                    <input type="text" class="form-control" id="NOME" name="NOME" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">Idade:</label>
+                                    <input type="text" class="form-control" id="IDADE" name="IDADE" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Brabo?</label>
+                                    <select class="form-control" id="BRABO" name="BRABO">
+                                      <option>Decida...</option>
+                                      <option>Sim</option>
+                                      <option>Não</option>
+                                    </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Gostos</th>
+                                            <th scope="col">1</th>
+                                            <th scope="col">2</th>
+                                            <th scope="col">3</th>
+                                            <th scope="col">4</th>
+                                            <th scope="col">5</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">Cerveja</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CERVEJA" id="CERVEJA" value="1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CERVEJA" id="CERVEJA" value="2">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CERVEJA" id="CERVEJA" value="3">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CERVEJA" id="CERVEJA" value="4">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CERVEJA" id="CERVEJA" value="5">
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Churrasco</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CHURRASCO" id="CHURRASCO" value="1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CHURRASCO" id="CHURRASCO" value="2">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CHURRASCO" id="CHURRASCO" value="3">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CHURRASCO" id="CHURRASCO" value="4">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="CHURRASCO" id="CHURRASCO" value="5">
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Pagode</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="PAGODE" id="PAGODE" value="1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="PAGODE" id="PAGODE" value="2">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="PAGODE" id="PAGODE" value="3">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="PAGODE" id="PAGODE" value="4">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="PAGODE" id="PAGODE" value="5">
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">$$ para um bom churrasco?</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="VALOR" name="VALOR" aria-label="Amount (to the nearest dollar)" required>
+                                    <div class="input-group-append">
+                                      <span class="input-group-text">,00</span>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col centered">
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="container-fluid">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">Nome:</label>
+                                    <input type="text" class="form-control" id="exampleInpuTextt1" name="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">Idade:</label>
+                                    <input type="text" class="form-control" id="exampleInpuTextt1" name="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Brabo?</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Sim</option>
+                                      <option>Não</option>
+                                    </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Gostos</th>
+                                            <th scope="col">1</th>
+                                            <th scope="col">2</th>
+                                            <th scope="col">3</th>
+                                            <th scope="col">4</th>
+                                            <th scope="col">5</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">Cerveja</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Churrasco</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Pagode</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInpuTextt1">$$ para um bom churrasco?</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text">.00</span>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col centered">
+                                <button type="submit" class="btn btn-primary">Pesquisar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Brabo</th>
+                        <th scope="col">Cerveja</th>
+                        <th scope="col">Churrasco</th>
+                        <th scope="col">Pagode</th>
+                        <th scope="col">Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">San Cunha</th>
+                        <td>22</td>
+                        <td>Sim</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>1000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
