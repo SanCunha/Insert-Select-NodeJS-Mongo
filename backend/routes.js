@@ -15,11 +15,11 @@ routes
         console.log(myobj);
         dbo.collection("cadastros").insertOne(myobj, function(err, res) { // insere o JSON no Bando de Dados
           if (err) throw err;
-          console.log("CHEGOU DESGRAÇA");
+          console.log("Inserção feita com sucesso!");
         });
         db.close();
       });
-      res.send("VAAAAAI CARALHO!!!!");
+      res.send("Inserção feita com sucesso!");
 })
 
 module.exports = routes;
