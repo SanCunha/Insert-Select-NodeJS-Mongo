@@ -24,6 +24,7 @@ label {
 
 .container {
     position: relative;
+    margin-top: 1%;
 }
 
  .form-group {
@@ -40,4 +41,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+ .col-sm {
+     border: 1px solid #000000;
+     padding-top: 5px;
+     padding-bottom: 5px;
  }
